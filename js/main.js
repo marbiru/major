@@ -8,11 +8,11 @@ $( "#submit" ).click(function () {
 	console.log(usersNumber);
 
 	nextSegment = usersNumber.substring(0,2)
-	/* while (usersNumber.length > 1) {
-		nextNumber = int(usersNumber[0:2]);
-	}; */
 
-	mnemonic = nextSegment
+	nextImage = pegArray[nextSegment]
+
+
+	mnemonic = nextImage
 
 	printMnemonic.innerHTML = mnemonic;
 

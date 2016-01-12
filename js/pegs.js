@@ -11,7 +11,7 @@ var singleDigitPegArray = [
 "pie"
 ]
 
-var PegArray = [
+var pegArray = [
 "sauce",
 "seed",
 "sun",
