@@ -7,11 +7,14 @@ $( "#submit" ).click(function () {
 
 	console.log(usersNumber);
 
+	nextSegment = usersNumber.substring(0,2)
 	/* while (usersNumber.length > 1) {
 		nextNumber = int(usersNumber[0:2]);
 	}; */
 
-	printMnemonic.innerHTML = usersNumber;
+	mnemonic = nextSegment
+
+	printMnemonic.innerHTML = mnemonic;
 
 });
 
