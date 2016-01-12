@@ -1,11 +1,9 @@
 $( "#submit" ).click(function () {
 	
 	var mnemonic = "";
-	mnemonic = singleDigitPegArray[2]; // TK remove line when everything actually works
 
 	var usersNumber = $( "#usersNumber" ).val();
 
-	console.log(usersNumber);
 
 	nextSegment = usersNumber.substring(0,2);
 
@@ -13,47 +11,31 @@ $( "#submit" ).click(function () {
 
 	usersNumber = usersNumber.substring(2);
 
-	console.log(usersNumber);
 
 	mnemonic = nextImage;
 
 	printMnemonic.innerHTML = mnemonic;
 
-});
-
-/* 
-def create_mnemonic():
-
-	import pegs
-
-	mnemonic = ""
-
-	the_input = raw_input("Enter the number you'd like to memorise \n")
-
-	while len(the_input) > 1:
-
-		next_number = int(the_input[0:2])
+			nextSegment = nextSegment[1];
 		
-		next_image = pegs.pegs_list[next_number]
+		};
+
+		nextImage = pegArray[nextSegment];
+
+		usersNumber = usersNumber.substring(2);
+
+		mnemonic += " " + nextImage;
+
+	};
+
+	if (usersNumber.length == 1) {
 		
-		the_input = the_input[2:]
-		
-		mnemonic += " " + next_image
+		nextSegment = usersNumber.substring(0,1);
 
-	if len(the_input) == 1:
+		nextImage = singleDigitPegArray[nextSegment];
 
-		next_number = int(the_input[0:1])
-		
-		next_image = pegs.single_digit_peg_list[next_number]
-		
-		mnemonic += " " + next_image
+		mnemonic += " " + nextImage;
+	};
 
-	else:
+	printMnemonic.innerHTML = mnemonic;
 
-		pass
-
-	print mnemonic
-
-create_mnemonic()
-
-*/
