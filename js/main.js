@@ -8,6 +8,7 @@ $( "#submit" ).click(function () {
 
 		nextSegment = usersNumber.substring(0,2);
 
+		if (nextSegment[0] == 0) {
 
 			nextSegment = nextSegment[1];
 		
@@ -32,3 +33,4 @@ $( "#submit" ).click(function () {
 
 	printMnemonic.innerHTML = mnemonic;
 
+});
