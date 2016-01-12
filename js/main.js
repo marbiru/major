@@ -7,12 +7,15 @@ $( "#submit" ).click(function () {
 
 	console.log(usersNumber);
 
-	nextSegment = usersNumber.substring(0,2)
+	nextSegment = usersNumber.substring(0,2);
 
-	nextImage = pegArray[nextSegment]
+	nextImage = pegArray[nextSegment];
 
+	usersNumber = usersNumber.substring(2);
 
-	mnemonic = nextImage
+	console.log(usersNumber);
+
+	mnemonic = nextImage;
 
 	printMnemonic.innerHTML = mnemonic;
 
