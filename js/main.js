@@ -4,17 +4,10 @@ $( "#submit" ).click(function () {
 
 	var usersNumber = $( "#usersNumber" ).val();
 
+	while (usersNumber.length > 1) {
 
-	nextSegment = usersNumber.substring(0,2);
+		nextSegment = usersNumber.substring(0,2);
 
-	nextImage = pegArray[nextSegment];
-
-	usersNumber = usersNumber.substring(2);
-
-
-	mnemonic = nextImage;
-
-	printMnemonic.innerHTML = mnemonic;
 
 			nextSegment = nextSegment[1];
 		
