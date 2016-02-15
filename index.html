@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Model Major Generator</title>
+    <title>Chinese Zodiac</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:300">
     <script src="js/vendor/modernizr.js"></script>
 
-    <meta property="og:title" content="Model Major Generator" />
+    <meta property="og:title" content="Chinese Zodiac" />
     <meta property="og:site_name" content="Marbiru"/>
-    <meta property="og:url" content="http://www.marbiru.com/major/" />
-    <meta property="og:description" content="An image to help you memorise any number" />
+    <meta property="og:url" content="http://www.marbiru.com/zodiac/" />
+    <meta property="og:description" content="Find your Chinese Zodiac sign" />
     <meta property="og:type" content="website" />
 
-    <meta property="og:image" content="http://marbiru.github.io/major/img/major_fb.png" />
+    <meta property="og:image" content="http://marbiru.github.io/zodiac/img/zodiac_fb.jpg" />
 
   <script>
     
@@ -25,7 +25,7 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-TKTKTKTK', 'auto');
+      ga('create', 'UA-62754798-3', 'auto');
       ga('send', 'pageview');
 
   </script>
@@ -36,8 +36,8 @@
     
     <div class="row">
       <div class="large-12 columns">
-        <h1>The Model Major Generator</h1>
-        <h2>An image to help you memorise any number</h2>
+        <h1>Chinese Zodiac</h1>
+        <h2>Find your Chinese Zodiac sign</h2>
       </div>
     </div>
     
@@ -46,23 +46,32 @@
       
           <div class="row">
             <div class="large-12 columns">
-              <p>The number I want to memorise is:
-                <input type="number" id="usersNumber" placeholder="my number" />
-                <button class="small radius button" id="submit">Give me an image!</button>
+              <p>(Western) Year:
+                <br />
+                <input type="number" id="inputYear" placeholder="Year" />
               </p>
             </div>
           </div>
 
           <div class="row">
             <div class="large-12 columns">
-              <p><span id="printMnemonic">&nbsp;</span></p>
+              <p>
+                <button class="small radius button" id="before">Before February</button>
+                <button class="small radius button" id="after">After February</button>
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-12 columns">
+              <p><span id="printZodiac">&nbsp;</span></p>
             </div>
             <div class="large-12 columns">
               <br />
               <hr />
-              <p class="note">Learn more about the <a href="https://en.wikipedia.org/wiki/Mnemonic_major_system">Major System</a>
-              <br />
-              Made by <a href="http://www.marbiru.com/">Marbiru</a></p>
+              <p class="note">
+                Made by <a href="http://www.marbiru.com/">Marbiru</a>
+              </p>
             </div>
           </div>
 
@@ -71,7 +80,6 @@
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
-        <script src="js/pegs.js"></script>
     <script src="js/main.js"></script>
 
     <script>

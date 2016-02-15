@@ -1,36 +1,45 @@
-$( "#submit" ).click(function () {
+/* dummy code:
+ - a list of the zodiac symbols
+ - using the year and a modulo calculation, figure out where we are in the cycle and select "before" or "after"
+ - update so that it knows the exact date each year instead of just "february"
+
+*/
+
+var zodiacArray = [
+"Monkey",
+"Rooster",
+"Dog",
+"Pig",
+"Rat",
+"Ox",
+"Tiger",
+"Rabbit",
+"Dragon",
+"Snake",
+"Horse",
+"Goat",
+]
+
+$( "#before" ).click(function () {
+
+	var inputYear = $( "#inputYear" ).val();
+
+	var moduloYear = (inputYear - 1) % 12;
+
+	console.log(moduloYear);
+
+	printZodiac.innerHTML = zodiacArray[moduloYear];
+
+});
+
+$( "#after" ).click(function () {
 	
-	var mnemonic = "";
+	var inputYear = $( "#inputYear" ).val();
 
-	var usersNumber = $( "#usersNumber" ).val();
+	var moduloYear = inputYear % 12;
 
-	while (usersNumber.length > 1) {
-
-		nextSegment = usersNumber.substring(0,2);
-
-		if (nextSegment[0] == 0) {
-
-			nextSegment = nextSegment[1];
-		
-		};
-
-		nextImage = pegArray[nextSegment];
-
-		usersNumber = usersNumber.substring(2);
-
-		mnemonic += " " + nextImage;
-
-	};
-
-	if (usersNumber.length == 1) {
-		
-		nextSegment = usersNumber.substring(0,1);
-
-		nextImage = singleDigitPegArray[nextSegment];
-
-		mnemonic += " " + nextImage;
-	};
-
-	printMnemonic.innerHTML = mnemonic;
+	console.log(moduloYear);
+	
+	printZodiac.innerHTML = zodiacArray[moduloYear];
 
 });

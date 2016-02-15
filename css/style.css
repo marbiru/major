@@ -22,7 +22,7 @@ p, label, input {
   text-align: center;
 }
 
-#printMnemonic {
+#printZodiac {
   color: #4B4B4D;
   font-size: 44px;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -36,8 +36,12 @@ p, label, input {
   text-align: center;
 }
 
+/* Facebook share image courtesy of   Jakub Hałun, Creative Commons Attribution-Share Alike 4.0 International
+
+https://en.wikipedia.org/wiki/File:20100720_Fukuoka_Kushida_3614_M.jpg */
+
 /* Background pattern from subtlepatterns.com */
 
 body {
-    background-image: url("wet_snow.png");
+    background-image: url("contemporary_china_2.png");
 }
