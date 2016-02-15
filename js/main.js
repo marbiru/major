@@ -13,6 +13,21 @@ var zodiacArray = [
 "Goat",
 ]
 
+var zodiacImageArray = [
+"<img src='img/monkey.png'></img>",
+"<img src='img/rooster.png'></img>",
+"<img src='img/dog.png'></img>",
+"<img src='img/pig.png'></img>",
+"<img src='img/rat.png'></img>",
+"<img src='img/ox.png'></img>",
+"<img src='img/tiger.png'></img>",
+"<img src='img/rabbit.png'></img>",
+"<img src='img/dragon.png'></img>",
+"<img src='img/snake.png'></img>",
+"<img src='img/horse.png'></img>",
+"<img src='img/goat.png'></img>",
+]
+
 var newYearDateArray = [
 "31st January",
 "19th February",
@@ -52,9 +67,9 @@ $( "#before" ).click(function () {
 
 	var moduloYear = (inputYear - 1) % 12;
 
-	console.log(moduloYear);
-
 	printZodiac.innerHTML = zodiacArray[moduloYear];
+
+	printImage.innerHTML = zodiacImageArray[moduloYear];
 
 });
 
@@ -63,9 +78,9 @@ $( "#after" ).click(function () {
 	var inputYear = $( "#inputYear" ).val();
 
 	var moduloYear = inputYear % 12;
-
-	console.log(moduloYear);
 	
 	printZodiac.innerHTML = zodiacArray[moduloYear];
+
+	printImage.innerHTML = zodiacImageArray[moduloYear];
 
 });
