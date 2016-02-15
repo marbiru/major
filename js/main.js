@@ -21,13 +21,6 @@ var zodiacArray = [
 ]
 
 var newYearDateArray = [
-"17th February",
-"6th February",
-"26th January",
-"14th February",
-"3rd February",
-"23rd January",
-"11th February",
 "31st January",
 "19th February",
 "8th February",
@@ -40,11 +33,24 @@ var newYearDateArray = [
 "22nd January",
 "9th February",
 "29th January",
+"17th February",
+"6th February",
+"26th January",
+"14th February",
+"3rd February",
+"23rd January",
+"11th February",
 ]
 
 $( "input").on('keyup', function() {
-    printNewYearDate.innerHTML = newYearDateArray[0];
-    printNewYearDate2.innerHTML = "hello";
+
+	var inputYear = $( "#inputYear" ).val();
+
+	var moduloYear = inputYear % 19;
+
+    printNewYearDate.innerHTML =newYearDateArray[moduloYear];
+
+    printNewYearDate2.innerHTML =newYearDateArray[moduloYear];
 });
 
 $( "#before" ).click(function () {
