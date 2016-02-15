@@ -1,10 +1,3 @@
-/* dummy code:
- - a list of the zodiac symbols
- - using the year and a modulo calculation, figure out where we are in the cycle and select "before" or "after"
- - update so that it knows the exact date each year instead of just "february"
-
-*/
-
 var zodiacArray = [
 "Monkey",
 "Rooster",
